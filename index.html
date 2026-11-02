@@ -1,4 +1,3 @@
-<!-- PENDENTE ATÉ AS FOTOS: {{N_FOTOS}}, {{LEGENDAS_FOTOS}}, {{CAPA_LARGURA}}, {{CAPA_ALTURA}} (veja sandero-stepway-files/PENDENTE.md) -->
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -135,7 +134,7 @@ dialog::backdrop{background:rgba(20,22,24,.96)}
 <body>
 
 <header class="hero">
-  <img src="fotos/foto-01.jpg" onerror="this.remove()" width="{{CAPA_LARGURA}}" height="{{CAPA_ALTURA}}" alt="Renault Sandero Stepway prata">
+  <img src="fotos/foto-01.jpg" width="1600" height="1224" alt="Renault Sandero Stepway prata visto de frente, em estacionamento">
   <div class="hero-info">
     <div class="wrap">
       <h1>Sandero Stepway 1.6 16V 2012</h1>
@@ -162,7 +161,7 @@ dialog::backdrop{background:rgba(20,22,24,.96)}
 
   <section id="fotos" aria-labelledby="t-fotos">
     <h2 id="t-fotos">Fotos</h2>
-    <p class="lead">Toque em uma foto para ampliar. São {{N_FOTOS}} fotos do carro por dentro e por fora.</p>
+    <p class="lead">Toque em uma foto para ampliar. São 16 fotos do carro por dentro e por fora.</p>
     <div class="galeria" id="galeria"></div>
   </section>
 
@@ -176,6 +175,7 @@ dialog::backdrop{background:rgba(20,22,24,.96)}
           <li>Visual aventureiro do Stepway, com suspensão elevada e altura livre do solo de 185 mm</li>
           <li>Porta-malas de 320 litros e espaço para 5 pessoas</li>
           <li>Câmbio manual de 5 marchas, simples e de manutenção barata</li>
+          <li>Ar-condicionado, rádio com CD e USB, trava elétrica, desembaçador traseiro, rack de teto e rodas de liga leve</li>
           <li>Somente venda, sem troca</li>
         </ul>
       </div>
@@ -241,7 +241,7 @@ dialog::backdrop{background:rgba(20,22,24,.96)}
 <script>
 (function(){
   var fotos = [
-{{LEGENDAS_FOTOS}}
+    "Frente 3/4", "Lateral", "Traseira 3/4", "Frente 3/4, outro lado", "Frente", "Traseira", "Frente com as portas abertas", "Lateral com as portas abertas", "Painel, rádio e câmbio manual", "Hodômetro com 100.490 km", "Banco do motorista", "Banco traseiro", "Interior visto pelo lado do passageiro", "Porta-malas aberto", "Porta-malas", "Pneu em bom estado"
   ];
   var nome = function(i, t){ return "fotos/foto-" + String(i+1).padStart(2,"0") + (t ? "-thumb" : "") + ".jpg"; };
 
