@@ -80,6 +80,10 @@ h2{font:700 34px/1 var(--display);margin:0 0 16px}
 .destaques{list-style:none;margin:0;padding:0}
 .destaques li{padding:12px 0 12px 30px;border-bottom:1px solid var(--prata);position:relative}
 .destaques li::before{content:"";position:absolute;left:0;top:20px;width:16px;height:6px;background:var(--faixa);transform:skewX(-20deg)}
+.destaques .servicos{list-style:disc;margin:8px 0 6px 20px;padding:0}
+.destaques .servicos li{padding:3px 0;border:0}
+.destaques .servicos li::before{display:none}
+.destaques .servicos-nota{display:block;font-size:15px;color:var(--asfalto-2)}
 table{width:100%;border-collapse:collapse;background:var(--branco);font-size:16px}
 th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--nevoa);vertical-align:top}
 th{font-weight:500;color:var(--asfalto-2);width:42%}
@@ -170,7 +174,16 @@ dialog::backdrop{background:rgba(20,22,24,.96)}
       <div>
         <h2 id="t-dest">Por que este Stepway</h2>
         <ul class="destaques">
-          <li>Manutenção em dia (nov/2026): troca de óleo do motor e do filtro de óleo, filtro de ar do motor, revisão e limpeza do ar-condicionado e troca do filtro do ar-condicionado. Nenhuma manutenção necessária nos próximos 10.000 km</li>
+          <li><strong>Manutenção em dia (nov/2026)</strong>
+            <ul class="servicos">
+              <li>Troca do óleo do motor</li>
+              <li>Troca do filtro de óleo</li>
+              <li>Troca do filtro de ar do motor</li>
+              <li>Revisão e limpeza do ar-condicionado</li>
+              <li>Troca do filtro do ar-condicionado</li>
+            </ul>
+            <span class="servicos-nota">Nenhuma manutenção necessária nos próximos 10.000 km</span>
+          </li>
           <li>Documento sem restrições e licenciamento 2026 pago</li>
           <li>Motor 1.6 16V flex de 112 cv: força de sobra na cidade e na estrada</li>
           <li>Visual aventureiro do Stepway, com suspensão elevada e altura livre do solo de 185 mm</li>
